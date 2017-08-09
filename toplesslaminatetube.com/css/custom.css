@@ -388,7 +388,7 @@ div#tubular-player .table-wrap .inner {
 }
 
 div#tubular-player .table-wrap .inner img {
-    padding: 30px;
+    padding: 0px 30px 100px 30px;
 }
 
 header.header_area {
@@ -488,6 +488,9 @@ div#specdoc-image .instructions .fa {
 }
 
 @media (max-width: 767px) {
+    div#tubular-player .table-wrap .inner img {
+        padding-bottom: 201px;
+    }
     div#specdoc-image .instructions {
         padding-right: 80px;
     }

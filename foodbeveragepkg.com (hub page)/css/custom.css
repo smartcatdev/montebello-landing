@@ -353,6 +353,9 @@ div#tubular-shield {
 }
 
 @media (max-width: 767px) {
+    div#tubular-player .table-wrap .inner img {
+        padding-bottom: 268px !important;
+    }
     #why-section .product-title {
         text-align: center;
     }
@@ -382,8 +385,8 @@ div#tubular-player .table-wrap .inner {
 }
 
 div#tubular-player .table-wrap .inner img {
-    padding: 30px;
-    margin-bottom: 130px;
+    padding: 0px 30px 100px 30px;
+    
 }
 
 header.header_area {
