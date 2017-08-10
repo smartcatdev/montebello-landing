@@ -183,7 +183,7 @@ a#menu-panel-close img {
         height: auto;
     }
     .nav-bar .nav-bar-cell {
-        height: 65px !important;
+        height: 85px !important;
     }
 }
 
@@ -242,7 +242,7 @@ a#menu-panel-close img {
     text-align: center;
     color: #fff;
     font-family: Oswald, sans-serif;
-    font-weight: 100;
+    font-weight: 500;
     font-size: 32px;
 }
 
@@ -290,7 +290,7 @@ div#tubular-shield {
 
 @media (max-width:767px) {
     iframe#tubular-player{
-        height: calc(100% - 268px) !important;
+        height: calc(100% - 348px) !important;
     }
 }
 
@@ -391,4 +391,31 @@ div#tubular-player .table-wrap .inner img {
 
 header.header_area {
     z-index: 999;
+}
+
+
+div#mute-button-box {
+    display: inline-block;
+    height: 40px;
+    padding: 0 20px;
+    line-height: 38px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    position: absolute;
+    top: -60px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 9999;
+    background-color: rgb(92,102,111);
+    font-weight: 100;
+}
+
+div#mute-button-box a {
+    color: #fff;
+}
+
+div#mute-button-box img {
+    max-height: 20px;
+    padding-bottom: 4px;
+    margin-right: 5px;
 }

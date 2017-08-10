@@ -28,11 +28,10 @@ jQuery(document).ready( function( $ ) {
             
         $('div#tubular-player').tubular({ 
             videoId: 'T3RCAP22N4k',
-            repeat: false,
+            repeat: true,
             mute: false,
-        }).delay( 11000 ).fadeIn( 700, function() {
-
-    });
+            muteButtonClass: 'tubular-mute'
+        });
 
 //        $('#tubular-container').appendTo('#jumbotron-section');
 //        $('#tubular-shield').appendTo('#jumbotron-section');

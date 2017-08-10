@@ -25,10 +25,9 @@ jQuery(document).ready( function( $ ) {
             
         $('div#tubular-player').tubular({ 
             videoId: 'vOez8oZU6cs',
-            repeat: false,
+            repeat: true,
             mute: false,
-        }).delay( 10800 ).fadeIn( 700, function() {
-
+            muteButtonClass: 'tubular-mute',
         });
 
 //        $('#tubular-container').appendTo('#jumbotron-section');

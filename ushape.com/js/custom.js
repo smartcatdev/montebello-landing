@@ -28,10 +28,9 @@ jQuery(document).ready( function( $ ) {
             
         $('div#tubular-player').tubular({ 
             videoId: 'vJg-9uCeMJQ',
-            repeat: false,
+            repeat: true,
             mute: false,
-        }).delay( 10000 ).fadeIn( 700, function() {
-
+            muteButtonClass: 'tubular-mute',
         });
 
 //        $('#tubular-container').appendTo('#jumbotron-section');

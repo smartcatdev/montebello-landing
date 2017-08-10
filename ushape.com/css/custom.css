@@ -302,20 +302,29 @@ div#tubular-shield {
 
 #why-section .product-title {
     font-family: Oswald, sans-serif;
-    font-weight: 400;
-    font-size: 80px;
+    font-weight: 700;
+    font-size: 49px;
     line-height: inherit;
     margin-bottom: 30px;
 }
 
 p.product-tagline {
-    margin-top: 40px;
+    margin-top: 30px;
     margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 300;
 }
 
 #why-section .product-subtitle {
-    font-weight: 300;
-    font-size: 24px;
+    font-weight: 400;
+    font-size: 28px;
+    margin-top: 50px;
+}
+
+#why-section .product-features p {
+    font-size: 21px;
+    line-height: normal;
+    font-weight: lighter;
 }
 
 .why-image {
@@ -324,8 +333,9 @@ p.product-tagline {
 
 #why-section .product-features .list-item {
     color: #363636;
-    font-weight: 300;
+    font-weight: lighter;
     position: relative;
+    font-size: 21px;
     z-index: 1;
     padding-left: 30px;
     margin-bottom: 24px;
@@ -348,6 +358,8 @@ p.product-tagline {
 
 #why-section .product-features .list-item.no-bullet {
     padding-left: 0;
+    font-weight: 400;
+    font-size: 28px;
 }
 
 @media (max-width: 767px) {
@@ -428,6 +440,8 @@ div#spec-points .bullet-body .inner-body {
     border-radius: 5px;
     position: relative;
     font-family: Oswald, sans-serif;
+    font-size: 21px;
+    line-height: normal;
 }
 
 div#spec-points .bullet-body .inner-body .number {
@@ -446,13 +460,14 @@ div#spec-points .bullet-body .inner-body .number {
 }
 
 div#specdoc-image {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
 div#spec-points .bullet-body .inner-body h3 {
     margin: 0;
     font-family: Oswald, sans-serif;
+    font-size: 21px;
 }
 
 div#spec-points .bullet-body .inner-body ul {
@@ -464,13 +479,16 @@ div#spec-points .bullet-body .inner-body span.light {
 }
 
 div#specdoc-image .instructions {
-    padding-right: 160px;
+    /*padding-right: 160px;*/
     position: relative;
     margin-bottom: 30px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 28px;
 }
 
 div#specdoc-image .instructions .fa {
-    position: absolute;
+    display: none !important;
     right: 7%;
     width: 40px;
     height: 40px;
@@ -480,7 +498,10 @@ div#specdoc-image .instructions .fa {
     line-height: 40px;
     text-align: center;
     border-radius: 50%;
-    display: inline-block;
+    display: block;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (max-width: 767px) {
@@ -488,9 +509,72 @@ div#specdoc-image .instructions .fa {
         padding-bottom: 201px;
     }
     div#specdoc-image .instructions {
-        padding-right: 80px;
+        padding-right: 0;
+        text-align: center;
     }
     div#specdoc-image .instructions .fa {
         right: 5%;
     }
+}
+
+/* Final Edits */
+
+div#specdoc-image img#product-map-image {
+    max-height: 600px;
+}
+
+div#specdoc-image img.extra-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /*max-width: 700px;*/
+    max-width: 60%;
+}
+
+div#specdoc-image {
+    text-align: left;
+}
+
+@media (max-width: 767px) {
+    #why-section {
+        padding: 50px 0 100px 0;
+    }
+    div#specdoc-image img.extra-image {
+        position: relative;
+        max-width: 100%;
+        max-height: 300px;
+    }
+    div#specdoc-image {
+        text-align: center;
+    }
+    div#specdoc-image .instructions .fa {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+div#mute-button-box {
+    display: inline-block;
+    height: 40px;
+    padding: 0 20px;
+    line-height: 38px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    position: absolute;
+    top: -60px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 9999;
+    background-color: rgb(92,102,111);
+    font-weight: 100;
+}
+
+div#mute-button-box a {
+    color: #fff;
+}
+
+div#mute-button-box img {
+    max-height: 20px;
+    padding-bottom: 4px;
+    margin-right: 5px;
 }
