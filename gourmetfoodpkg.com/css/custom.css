@@ -284,6 +284,7 @@ div#tubular-shield {
 
 #why-section {
     position: relative;
+    padding: 50px 0 100px 0;
 }
 
 #why-section > .inner {
@@ -602,4 +603,12 @@ div#mute-button-box img {
     max-height: 20px;
     padding-bottom: 4px;
     margin-right: 5px;
+}
+
+@media (min-width: 768px) {
+
+    #why-section .product-title {
+        margin-top: 40px;
+    }
+
 }
